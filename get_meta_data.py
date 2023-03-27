@@ -59,8 +59,8 @@ if __name__ == "__main__":
         else: # fetch meta data for movie
             print(f"Fetching meta data for '{ml_movie.title}'")
             movie_title = ml_movie.title.replace(" ", "+") # replace spaces with + for url
-            url = f"https://www.omdbapi.com/?t={movie_title}&apikey=aa348489" # API key with school mail
-            # url = f"https://www.omdbapi.com/?t={movie_title}&apikey=967eb8c6" # API key with private mail
+            # url = f"https://www.omdbapi.com/?t={movie_title}&apikey=aa348489" # API key with school mail
+            url = f"https://www.omdbapi.com/?t={movie_title}&apikey=967eb8c6" # API key with private mail
             response = get_meta_data(url) # fetch meta data and save response
             if not response[0] == 200: # check if response is ok
                 print_error(response, ml_movie)
