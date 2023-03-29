@@ -29,7 +29,10 @@ def save_not_found_movies(movies: list):
 if __name__ == "__main__":
     # read movies from movielens dataset
     ml_movies = pd.read_csv('data/movies.dat', sep='::', engine='python', names=['movieId', 'title', 'genres'], encoding="ISO-8859-1")
+    # Remove year from title
     ml_movies['title'] = ml_movies['title'].str.replace(r"\s\(\d{4}\)","", regex=True)
+    # Change titles with , The and move it to the start of the title
+    ml_movies['title'] = ml_movies['title'].str.replace(r"^(.*), The$", "The \\1", regex=True)
 
     # read already fetched movies
     movies_file = 'data/movies_meta_data.csv'
