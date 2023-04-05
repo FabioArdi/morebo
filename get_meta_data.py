@@ -30,6 +30,8 @@ if __name__ == "__main__":
     # Remove year from title and add it as a separate column
     ml_movies['ml_year'] = ml_movies['ml_title'].str.extract(r"\((\d{4})\)", expand=False)
     ml_movies['ml_title'] = ml_movies['ml_title'].str.replace(r"\s\(\d{4}\)","", regex=True)
+    # Change alternate titles with ',' and move part after ',' to the start of the title. Alternate titles are in the format: 'title (alternative title)'
+    ml_movies['ml_title'] = ml_movies['ml_title'].apply(lambda x: x[:x.index('(')-1] + ' (' + ' '.join(x[x.index('(')+1:x.index(')')].split(',')[::-1]).strip() + ')' if '(' in x and ',' in x[x.index('(')+1:x.index(')')] else x)
     # Change titles with ',' and move part after ',' to the start of the title
     ml_movies['ml_title'] = ml_movies['ml_title'].apply(lambda x: ' '.join(x.split(',')[::-1]).strip())
 
@@ -62,8 +64,8 @@ if __name__ == "__main__":
             print(f"Fetching meta data for '{ml_movie.ml_title}'")
             movie_title = ml_movie.ml_title.replace(" ", "+") # replace spaces with + for url
             movie_year = ml_movie.ml_year
-            # url = f"https://www.omdbapi.com/?t={movie_title}&apikey=aa348489" # API key with school mail
-            url = f"https://www.omdbapi.com/?t={movie_title}&y={movie_year}&apikey=967eb8c6" # API key with private mail
+            url = f"https://www.omdbapi.com/?t={movie_title}&apikey=aa348489" # API key with school mail
+            # url = f"https://www.omdbapi.com/?t={movie_title}&y={movie_year}&apikey=967eb8c6" # API key with private mail
             response = get_meta_data(url) # fetch meta data and save response
             if not response[0] == 200: # check if response is ok
                 print_error(response, ml_movie)
@@ -76,8 +78,6 @@ if __name__ == "__main__":
                 movie_df = pd.concat([ml_movie, movie_meta_data], axis=0)
                 new_fetched_movies.append(pd.DataFrame(movie_df).T)
             index += 1
-            if index > 5:
-                break
 
     # save not found movies to csv file
     save_not_found_movies(new_not_found)
