@@ -1,969 +1,530 @@
-title,ml_title
-"American President, The",
-"City of Lost Children, The",
-Shanghai Triad (Yao a yao yao dao waipo qiao),
-Seven (Se7en),
-"Usual Suspects, The",
-"Big Green, The",
-"Postino, Il (The Postman)",
-"Confessional, The (Le Confessionnal)",
-"Indian in the Cupboard, The",
-French Twist (Gazon maudit),
-"Misérables, Les",
-"Crossing Guard, The",
-"Juror, The",
-"White Balloon, The (Badkonake Sefid )",
-Antonia's Line (Antonia),
-"Journey of August King, The",
-"Hate (Haine, La)",
-"Bridges of Madison County, The",
-Nobody Loves Me (Keiner liebt mich),
-"Young Poisoner's Handbook, The",
-"Boys of St. Vincent, The",
-"Star Maker, The (Uomo delle stelle, L')",
-"NeverEnding Story III, The",
-"Silence of the Palace, The (Saimt el Qusur)",
-"Neon Bible, The",
-"Birdcage, The",
-Shadows (Cienie),
-"Brothers McMullen, The",
-"Amazing Panda Adventure, The",
-"Basketball Diaries, The",
-"Awfully Big Adventure, An",
-"Doom Generation, The",
-"Scarlet Letter, The",
-"Stars Fell on Henrietta, The",
-"Umbrellas of Cherbourg, The (Parapluies de Cherbourg, Les)",
-"Tie That Binds, The",
-"Walk in the Clouds, A",
-"Browning Version, The",
-Burnt By the Sun (Utomlyonnye solntsem),
-Before the Rain (Pred dozhdot),
-"Goofy Movie, A",
-Farinelli: il castrato,
-"Glass Shield, The",
-"Jerky Boys, The",
-"Kid in King Arthur's Court, A",
-"Little Princess, A",
-"Enfer, L'",
-Like Water for Chocolate (Como agua para chocolate),
-My Crazy Life (Mi vida loca),
-"Madness of King George, The",
-"Professional, The (a.k.a. Leon: The Professional)",
-"Perez Family, The",
-"Pyromaniac's Love Story, A",
-Queen Margot (La Reine Margot),
-"Quick and the Dead, The",
-Ready to Wear (Pret-A-Porter),
-"Red Firecracker, Green Firecracker",
-"Secret of Roan Inish, The",
-"Specialist, The",
-"Santa Clause, The",
-"Shawshank Redemption, The",
-Strawberry and Chocolate (Fresa y chocolate),
-"Sum of Us, The",
-To Live (Huozhe),
-Tales From the Crypt Presents: Demon Knight,
-"Baby-Sitters Club, The",
-"Flintstones, The",
-"Wonderful, Horrible Life of Leni Riefenstahl, The (Die Macht der Bilder)",
-"Lion King, The",
-Wes Craven's New Nightmare,
-"Paper, The",
-"River Wild, The",
-"Man of No Importance, A",
-"Low Down Dirty Shame, A",
-"Colonel Chabert, Le",
-"Secret Adventures of Tom Thumb, The",
-Two Crimes,
-Highlander III: The Sorcerer,
-"Age of Innocence, The",
-"Air Up There, The",
-"Beverly Hillbillies, The",
-"Bronx Tale, A",
-"Cowboy Way, The",
-"Endless Summer 2, The",
-"Firm, The",
-"Good Man in Africa, A",
-"Englishman Who Went Up a Hill, But Came Down a Mountain, The",
-"House of the Spirits, The",
-"Hudsucker Proxy, The",
-"Man Without a Face, The",
-In the Realm of the Senses (Ai no corrida),
-"Next Karate Kid, The",
-"Program, The",
-Robert A. Heinlein's The Puppet Masters,
-"Ref, The",
-"Road to Wellville, The",
-"Saint of Fort Washington, The",
-"Savage Nights (Nuits fauves, Les)",
-"Secret Garden, The",
-"Simple Twist of Fate, A",
-"Nightmare Before Christmas, The",
-"Three Musketeers, The",
-"War Room, The",
-"Pagemaster, The",
-"Beans of Egypt, Maine, The",
-Killer (Bulletproof Heart),
-"Slingshot, The (Kådisbellan )",
-"Wedding Gift, The",
-"Ciao, Professore! (Io speriamo che me la cavo )",
-"Little Rascals, The",
-"Hour of the Pig, The",
-"Scorta, La",
-"Celluloid Closet, The",
-Metisse (Café au Lait),
-Dear Diary (Caro Diario),
-I Don't Want to Talk About It (De eso no se habla),
-"Brady Bunch Movie, The",
-"Silence of the Lambs, The",
-"Wild Bunch, The",
-"Wooden Man's Bride, The (Wu Kui)",
-"Great Day in Harlem, A",
-"Pallbearer, The",
-Bread and Chocolate (Pane e cioccolata),
-"Aristocats, The",
-"Flower of My Secret, The (La Flor de Mi Secreto)",
-Scream of Stone (Schrei aus Stein),
-"Modern Affair, A",
-Asfour Stah,
-"Thin Line Between Love and Hate, A",
-Land and Freedom (Tierra y libertad),
-"Family Thing, A",
-Jack and Sarah,
-"Little Indian, Big City (Un indien dans la ville)",
-Cold Fever (Á köldum klaka),
-"Superweib, Das",
-Mutters Courage,
-"World of Apu, The (Apur Sansar)",
-"Run of the Country, The",
-Clean Slate (Coup de Torchon),
-"Eye of Vichy, The (Oeil de Vichy, L')",
-"Promise, The (Versprechen, Das)",
-Under the Domin Tree (Etz Hadomim Tafus),
-"Substitute, The",
-"Horseman on the Roof, The (Hussard sur le toit, Le)",
-Mouth to Mouth (Boca a boca),
-"Visitors, The (Les Visiteurs)",
-Halfmoon (Paul Bowles - Halbmond),
-"Haunted World of Edward D. Wood Jr., The",
-"Great White Hype, The",
-"Institute Benjamenta, or This Dream People Call Human Life",
-"Low Life, The",
-Cemetery Man (Dellamorte Dellamore),
-"Garcu, Le",
-Ghost in the Shell (Kokaku kidotai),
-"Close Shave, A",
-"Stupids, The",
-"Man from Down Under, The",
-"Month by the Lake, A",
-"Jar, The (Khomreh)",
-"Last of the High Kings, The (a.k.a. Summer Fling)",
-"Grass Harp, The",
-"Vie est belle, La (Life is Rosey)",
-Touki Bouki (Journey of the Hyena),
-Wend Kuuni (God's Gift),
-Spirits of the Dead (Tre Passi nel Delirio),
-Independence Day (ID4),
-"Hunchback of Notre Dame, The",
-"Cable Guy, The",
-"Gate of Heavenly Peace, The",
-"Nutty Professor, The",
-"I, Worst of All (Yo, la peor de todas)",
-An Unforgettable Summer,
-"Last Klezmer: Leopold Kozlowski, His Life and Music, The",
-"Hungarian Fairy Tale, A",
-My Life and Times With Antonin Artaud (En compagnie d'Antonin Artaud),
-Midnight Dancers (Sibak),
-"Very Natural Thing, A",
-"Old Lady Who Walked in the Sea, The (Vieille qui marchait dans la mer, La)",
-"Frighteners, The",
-"Rendezvous in Paris (Rendez-vous de Paris, Les)",
-"Bewegte Mann, Der",
-Magic Hunter,
-"Boy Called Hate, A",
-"Very Brady Sequel, A",
-"Death in the Garden (Mort en ce jardin, La)",
-"Crude Oasis, The",
-"Collectionneuse, La",
-Echte Kerle,
-"Convent, The (Convento, O)",
-"Adventures of Pinocchio, The",
-"First Wives Club, The",
-"Crow: City of Angels, The",
-Tales from the Crypt Presents: Bordello of Blood,
-"Story of Xinghua, The",
-"Day the Sun Turned Cold, The (Tianguo niezi)",
-"Big Squeeze, The",
-"Spitfire Grill, The",
-"Ballad of Narayama, The (Narayama Bushiko)",
-"Hippie Revolution, The",
-"Maybe, Maybe Not (Bewegte Mann, Der)",
-Aiqing wansui,
-Shadow of Angels (Schatten der Engel),
-Police Story 4: Project S (Chao ji ji hua),
-"Relic, The",
-"Island of Dr. Moreau, The",
-"Trigger Effect, The",
-"Philadelphia Story, The",
-"American in Paris, An",
-"Gay Divorcee, The",
-"Maltese Falcon, The",
-"Little Princess, The",
-Sunset Blvd. (a.k.a. Sunset Boulevard),
-"Affair to Remember, An",
-"Band Wagon, The",
-"Reluctant Debutante, The",
-"Adventures of Robin Hood, The",
-"Mark of Zorro, The",
-"Ghost and Mrs. Muir, The",
-"Thin Man, The",
-"Inspector General, The",
-"39 Steps, The",
-"Walk in the Sun, A",
-"African Queen, The",
-"Last Time I Saw Paris, The",
-"Farewell to Arms, A",
-"Blue Angel, The (Blaue Engel, Der)",
-In the Line of Duty 2,
-"Pompatus of Love, The",
-Schlafes Bruder (Brother of Sleep),
-"Rich Man's Wife, The",
-"Associate, The (L'Associe)(1982)",
-"Glimmer Man, The",
-"Chamber, The",
-"Apple Dumpling Gang, The",
-"Love Bug, The",
-"Parent Trap, The",
-"Shaggy Dog, The",
-"Three Caballeros, The",
-"Sword in the Stone, The",
-"Fox and the Hound, The",
-"Lawnmower Man, The",
-"Secret Agent, The",
-"Long Kiss Goodnight, The",
-"Ghost and the Darkness, The",
-"Proprietor, The",
-Bitter Sugar (Azucar Amargo),
-William Shakespeare's Romeo and Juliet,
-"Sunchaser, The",
-"Woman in Question, The",
-"Damsel in Distress, A",
-"Sexual Life of the Belgians, The",
-"Fish Called Wanda, A",
-Monty Python's Life of Brian,
-"Crying Game, The",
-"Search for One-eye Jimmy, The",
-"Streetcar Named Desire, A",
-Children of the Corn IV: The Gathering,
-"Leopard Son, The",
-Charm's Incidents,
-Microcosmos (Microcosmos: Le peuple de l'herbe),
-"Associate, The",
-"Funeral, The",
-"Single Girl, A (La Fille Seule)",
-"Eighth Day, The (Le Huitième jour )",
-Tashunga,
-"People vs. Larry Flynt, The",
-"Perfect Candidate, A",
-"Return of the Pink Panther, The",
-"Howling, The",
-Manon of the Spring (Manon des sources),
-"Line King: Al Hirschfeld, The",
-"Wrong Trousers, The",
-JLG/JLG - autoportrait de décembre,
-"Return of Martin Guerre, The (Retour de Martin Guerre, Le)",
-"Invitation, The (Zaproszenie)",
-"Children Are Watching us, The (Bambini ci guardano, I)",
-"Symphonie pastorale, La",
-"Tin Drum, The (Blechtrommel, Die)",
-"Ruling Class, The",
-Two or Three Things I Know About Her,
-"Bloody Child, The",
-"Double Life of Veronique, The (La Double Vie de Véronique)",
-"Grifters, The",
-"English Patient, The",
-"Good, The Bad and The Ugly, The",
-"Clockwork Orange, A",
-Wings of Desire (Der Himmel über Berlin),
-"Third Man, The",
-"Big Blue, The (Le Grand Bleu)",
-"Killer, The (Die xue shuang xiong)",
-"Blues Brothers, The",
-"Godfather: Part II, The",
-"Grand Day Out, A",
-"Right Stuff, The",
-"Boat, The (Das Boot)",
-"Seventh Seal, The (Sjunde inseglet, Det)",
-Rosencrantz and Guildenstern Are Dead,
-"Graduate, The",
-Nikita (La Femme Nikita),
-"Bridge on the River Kwai, The",
-"Day the Earth Stood Still, The",
-"Treasure of the Sierra Madre, The",
-"Deer Hunter, The",
-"Manchurian Candidate, The",
-"Big Sleep, The",
-"Unbearable Lightness of Being, The",
-"Room with a View, A",
-"Killing Fields, The",
-My Life as a Dog (Mitt liv som hund),
-"Man Who Would Be King, The",
-Until the End of the World (Bis ans Ende der Welt),
-"American Werewolf in London, An",
-"Amityville Curse, The",
-Blood For Dracula (Andy Warhol's Dracula),
-"Blob, The",
-"Body Snatcher, The",
-"Nightmare on Elm Street, A",
-"Nosferatu (Nosferatu, eine Symphonie des Grauens)",
-Nosferatu a Venezia,
-"Omen, The",
-"Mirror Has Two Faces, The",
-Identification of a Woman (Identificazione di una donna),
-"Garden of Finzi-Contini, The (Giardino dei Finzi-Contini, Il)",
-"Preacher's Wife, The",
-Zero Kelvin (Kjærlighetens kjøtere),
-"Crucible, The",
-"Forbidden Christ, The (Cristo proibito, Il)",
-I Can't Sleep (J'ai pas sommeil),
-Star Trek: The Wrath of Khan,
-"Substance of Fire, The",
-"Cérémonie, La",
-"Last of the Mohicans, The",
-"Evening Star, The",
-"Whole Wide World, The",
-"Thieves (Voleurs, Les)",
-"Portrait of a Lady, The",
-Jackie Chan's First Strike,
-"Cement Garden, The",
-"Tickle in the Heart, A",
-Prisoner of the Mountains (Kavkazsky Plennik),
-"Beautician and the Beast, The",
-"Pest, The",
-Salut cousin!,
-Jungle2Jungle (a.k.a. Jungle 2 Jungle),
-"Daytrippers, The",
-"Quiet Room, The",
-"Devil's Own, The",
-"Sixth Man, The",
-"Brother's Kiss, A",
-Temptress Moon (Feng Yue),
-"Fifth Element, The",
-"Promise, The (La Promesse)",
-Shall We Dance? (Shall We Dansu?),
-"Designated Mourner, The",
-"Lost World: Jurassic Park, The",
-"War at Home, The",
-"Pillow Book, The",
-"Next Step, The",
-Roseanna's Grave (For Roseanna),
-"Last Time I Committed Suicide, The",
-When the Cats Away (Chacun cherche son chat),
-Contempt (Le Mépris),
-"Innocent Sleep, The",
-"Simple Wish, A",
-"Hunt for Red October, The",
-"Thousand Acres, A",
-"MatchMaker, The",
-"Lay of the Land, The",
-"Smile Like Yours, A",
-"Full Monty, The",
-Indian Summer (a.k.a. Alive & Kicking),
-"Mrs. Brown (Her Majesty, Mrs. Brown)",
-"House of Yes, The",
-"Life Less Ordinary, A",
-"Tango Lesson, The",
-"Rainmaker, The",
-"Joy Luck Club, The",
-"Truman Show, The",
-"Wings of the Dove, The",
-"Man Who Knew Too Little, The",
-"Apostle, The",
-"Boys, Les",
-"Butcher Boy, The",
-Mouse Hunt,
-"Sweet Hereafter, The",
-"Education of Little Tree, The",
-"Horse Whisperer, The",
-"Winter Guest, The",
-"Big Lebowski, The",
-My Life in Pink (Ma vie en rose),
-3 Ninjas: High Noon On Mega Mountain,
-"Midaq Alley (Callejón de los milagros, El)",
-"Leading Man, The",
-"Prophecy II, The",
-Duoluo tianshi,
-"Letter From Death Row, A",
-Mat' i syn,
-"Replacement Killers, The",
-"Wedding Singer, The",
-"Further Gesture, A",
-"Paralyzing Fear: The Story of Polio in America, A",
-"Sadness of Sex, The",
-U.S. Marshalls,
-"Callejón de los milagros, El",
-"Man in the Iron Mask, The",
-"Newton Boys, The",
-"Cool Dry Place, A",
-Hana-bi,
-"Price Above Rubies, A",
-"Proposition, The",
-"Object of My Affection, The",
-"Player's Club, The",
-"Big One, The",
-"Spanish Prisoner, The",
-"Last Days of Disco, The",
-"Odd Couple II, The",
-"Gingerbread Man, The",
-"Borrowers, The",
-"Alan Smithee Film: Burn Hollywood Burn, An",
-"Real Blonde, The",
-Character (Karakter),
-"Big Hit, The",
-"Friend of the Deceased, A",
-"Hanging Garden, The",
-"Opposite of Sex, The",
-"Ugly, The",
-"Perfect Murder, A",
-"Land Girls, The",
-"Children of Heaven, The (Bacheha-Ye Aseman)",
-"X-Files: Fight the Future, The",
-"Broadway Melody, The",
-"Great Ziegfeld, The",
-"Life of Émile Zola, The",
-"Lost Weekend, The",
-"Best Years of Our Lives, The",
-"Greatest Show on Earth, The",
-"Man for All Seasons, A",
-"French Connection, The",
-Kramer Vs. Kramer,
-"Last Emperor, The",
-"Breakfast Club, The",
-"Nightmare on Elm Street Part 2: Freddy's Revenge, A",
-"Nightmare on Elm Street 3: Dream Warriors, A",
-"Nightmare on Elm Street 4: The Dream Master, A",
-"Nightmare on Elm Street 5: The Dream Child, A",
-Friday the 13th Part 3: 3D,
-"Exorcist III, The",
-"Goonies, The",
-"Mask of Zorro, The",
-"Absent Minded Professor, The",
-"Apple Dumpling Gang Rides Again, The",
-Seven Samurai (The Magnificent Seven) (Shichinin no samurai),
-"Last Temptation of Christ, The",
-"Godfather: Part III, The",
-East Palace West Palace (Dong gong xi gong),
-"$1,000,000 Duck",
-"Barefoot Executive, The",
-"Black Cauldron, The",
-"Cat from Outer Space, The",
-"Computer Wore Tennis Shoes, The",
-"Devil and Max Devlin, The",
-"Far Off Place, A",
-"Gnome-Mobile, The",
-"Great Mouse Detective, The",
-"Happiest Millionaire, The",
-"Incredible Journey, The",
-"Governess, The",
-Seventh Heaven (Le Septième ciel),
-"Purple Rose of Cairo, The",
-"Trip to Bountiful, The",
-"Night Porter, The (Il Portiere di notte)",
-"Journey of Natty Gann, The",
-"Little Mermaid, The",
-"Muppet Christmas Carol, The",
-"Rescuers Down Under, The",
-"Rescuers, The",
-"Return of Jafar, The",
-"Rocketeer, The",
-"Shaggy D.A., The",
-"Jerk, The",
-"Man with Two Brains, The",
-"Dead Zone, The",
-"Addams Family, The",
-"Saltmen of Tibet, The",
-Autumn Sonata (Höstsonaten ),
-"Secret of NIMH, The",
-"American Tail, An",
-"American Tail: Fievel Goes West, An",
-"Clan of the Cave Bear, The",
-"Gods Must Be Crazy, The",
-"Gods Must Be Crazy II, The",
-"Slums of Beverly Hills, The",
-"Best Man, The (Il Testimone dello sposo)",
-"Chambermaid on the Titanic, The",
-"NeverEnding Story II: The Next Chapter, The",
-"Strike! (a.k.a. All I Wanna Do, The Hairy Bird)",
-"Navigator: A Mediaeval Odyssey, The",
-"Wrong Man, The",
-"Man Who Knew Too Much, The",
-"Trouble with Harry, The",
-"Merry War, A",
-See the Sea (Regarde la mer),
-"Paradine Case, The",
-"Lady Vanishes, The",
-Waltzes from Vienna,
-Number Seventeen,
-Rich and Strange,
-"Skin Game, The",
-Juno and Paycock,
-"Manxman, The",
-"Farmer's Wife, The",
-"Lodger, The",
-"Mountain Eagle, The",
-"Pleasure Garden, The",
-Seven Beauties (Pasqualino Settebellezze),
-Swept Away (Travolti da un insolito destino nell'azzurro mare d'Agosto),
-"Allnighter, The",
-"Cabinet of Dr. Ramirez, The",
-Master Ninja I,
-"Seventh Sign, The",
-"Butcher's Wife, The",
-"Few Good Men, A",
-"Century of Cinema, A",
-"Soldier's Daughter Never Cries, A",
-"Sheltering Sky, The",
-"Fiendish Plot of Dr. Fu Manchu, The",
-"Impostors, The",
-"Night at the Roxbury, A",
-"Battle of the Sexes, The",
-"Producers, The",
-"Inheritors, The (Die Siebtelbauern)",
-"Mighty, The",
-"Elephant Man, The",
-"Alarmist, The",
-Life Is Beautiful (La Vita è bella),
-Hands on a Hard Body,
-"Waterboy, The",
-"Naked Man, The",
-"Stepford Wives, The",
-"Pope of Greenwich Village, The",
-Nights of Cabiria (Le Notti di Cabiria),
-"Big Chill, The",
-"Rugrats Movie, The",
-"Bug's Life, A",
-Central Station (Central do Brasil),
-"Celebration, The (Festen)",
-Godzilla (Gojira),
-King Kong vs. Godzilla (Kingukongu tai Gojira),
-"Emerald Forest, The",
-"Money Pit, The",
-"View to a Kill, A",
-Jerry Springer: Ringmaster,
-Steam: The Turkish Bath (Hamam),
-"Prince of Egypt, The",
-"Jewel of the Nile, The",
-"Karate Kid, The",
-"Karate Kid, Part II, The",
-"Karate Kid III, The",
-"Theory of Flight, The",
-"Thin Red Line, The",
-"Faculty, The",
-"Civil Action, A",
-"Hi-Lo Country, The",
-24 7: Twenty Four Seven,
-"Garbage Pail Kids Movie, The",
-"Gate II: Trespassers, The",
-"Boy Who Could Fly, The",
-"Fly II, The",
-"Texas Chainsaw Massacre 2, The",
-"Name of the Rose, The",
-"Color of Money, The",
-Dry Cleaning (Nettoyage à sec),
-"Day of the Beast, The (El Día de la bestia)",
-"Harmonists, The",
-"Fantastic Planet, The (La Planète sauvage)",
-"Apple, The (Sib)",
-"Other Sister, The",
-"Concorde: Airport '79, The",
-"Corruptor, The",
-"School of Flesh, The (L' École de la chair)",
-"Deep End of the Ocean, The",
-"Rage: Carrie 2, The",
-I Stand Alone (Seul contre tous),
-"King and I, The",
-"Empty Mirror, The",
-"Mod Squad, The",
-"Walk on the Moon, A",
-"Out-of-Towners, The",
-"Dreamlife of Angels, The (La Vie rêvée des anges)",
-"Sticky Fingers of Time, The",
-Twin Dragons (Shuang long hui),
-"Lovers of the Arctic Circle, The (Los Amantes del Círculo Polar)",
-Jeanne and the Perfect Guy (Jeanne et le garçon formidable),
-"Joyriders, The",
-"Monster, The (Il Mostro)",
-Open Your Eyes (Abre los ojos),
-Photographer (Fotoamator),
-"Little Bit of Soul, A",
-Mighty Peking Man (Hsing hsing wang),
-"King of Masks, The (Bian Lian)",
-"Winslow Boy, The",
-Chopping Mall (a.k.a. Killbots),
-Xiu Xiu: The Sent-Down Girl (Tian yu),
-Black Mask (Hak hap),
-"Love Letter, The",
-Besieged (L' Assedio),
-"Saragossa Manuscript, The (Rekopis znaleziony w Saragossie)",
-"Mummy's Curse, The",
-"Mummy's Ghost, The",
-"Mummy's Hand, The",
-"Mummy's Tomb, The",
-"Ghost of Frankenstein, The",
-"Curse of Frankenstein, The",
-"Wolf Man, The",
-"Rocky Horror Picture Show, The",
-"Flying Saucer, The",
-"Thing From Another World, The",
-Earth Vs. the Flying Saucers,
-"Mole People, The",
-"Thirteenth Floor, The",
-Eternity and a Day (Mia eoniotita ke mia mera ),
-"Loss of Sexual Innocence, The",
-"Red Dwarf, The (Le Nain rouge)",
-"Red Violin, The (Le Violon rouge)",
-"General's Daughter, The",
-"Ideal Husband, An",
-"Legend of 1900, The (Leggenda del pianista sull'oceano)",
-Run Lola Run (Lola rennt),
-"Dinner Game, The (Le Dîner de cons)",
-"South Park: Bigger, Longer and Uncut",
-"Lovers on the Bridge, The (Les Amants du Pont-Neuf)",
-"Late August, Early September (Fin août, début septembre)",
-"Autumn Tale, An (Conte d'automne)",
-"Velocity of Gary, The",
-"400 Blows, The (Les Quatre cents coups)",
-Jules and Jim (Jules et Jim),
-"Mosquito Coast, The",
-"Golden Child, The",
-Ménage (Tenue de soirée),
-"Little Shop of Horrors, The",
-Allan Quartermain and the Lost City of Gold,
-"Bedroom Window, The",
-"Gambler, The (A Játékos)",
-"Iron Giant, The",
-"Thomas Crown Affair, The",
-"Acid House, The",
-"Adventures of Sebastian Cole, The",
-Alice and Martin (Alice et Martin),
-"Marcello Mastroianni: I Remember Yes, I Remember",
-"Tomb of Ligeia, The",
-"Masque of the Red Death, The",
-"Final Conflict, The (a.k.a. Omen III: The Final Conflict)",
-"American Werewolf in Paris, An",
-Oscar and Lucinda (a.k.a. Oscar & Lucinda),
-"Pelican Brief, The",
-"Christmas Story, A",
-"Source, The",
-Iron Eagle IV,
-"Spiders, The (Die Spinnen, 1. Teil: Der Goldene See)",
-"13th Warrior, The",
-"Astronaut's Wife, The",
-Cabaret Balkan (Bure Baruta),
-"Dog of Flanders, A",
-"Lost Son, The",
-"Very Thought of You, The",
-West Beirut (West Beyrouth),
-"Black Cat, White Cat (Crna macka, beli macor)",
-"Minus Man, The",
-"Adventures of Milo and Otis, The",
-"Soldier's Story, A",
-"Communion (a.k.a. Alice, Sweet Alice/Holy Terror)",
-"Hard Day's Night, A",
-"Buddy Holly Story, The",
-Fright Night Part II,
-"Separation, The (La Séparation)",
-"Pajama Game, The",
-Operation Condor (Feiying gaiwak),
-Operation Condor 2 (Longxiong hudi),
-"Adventures of Elmo in Grouchland, The",
-And the Ship Sails On (E la nave va),
-"Ennui, L'",
-"Grandfather, The (El Abuelo)",
-"Limey, The",
-"Mating Habits of the Earthbound Human, The",
-Children of Paradise (Les enfants du paradis),
-Citizen's Band (a.k.a. Handle with Care),
-Drunken Master (Zui quan),
-"Conformist, The (Il Conformista)",
-Time of the Gypsies (Dom za vesanje),
-"Fire Within, The (Le Feu Follet)",
-"Love Bewitched, A (El Amor Brujo)",
-"Lady Eve, The",
-"Palm Beach Story, The",
-Man Facing Southeast (Hombre Mirando al Sudeste),
-"Fistful of Dollars, A",
-"Hard 8 (a.k.a. Sydney, a.k.a. Hard Eight)",
-"Story of Us, The",
-"Omega Code, The",
-"Straight Story, The",
-"Man and a Woman, A (Un Homme et une Femme)",
-Red Sorghum (Hong Gao Liang),
-"Ipcress File, The",
-"House on Haunted Hill, The",
-"Princess Mononoke, The (Mononoke Hime)",
-"Suburbans, The",
-My Best Fiend (Mein liebster Feind),
-Train of Life (Train De Vie),
-"Bone Collector, The",
-Portraits Chinois,
-"Funhouse, The",
-"Taming of the Shrew, The",
-"Omega Man, The",
-"Face in the Crowd, A",
-"Incredibly True Adventure of Two Girls in Love, The",
-"Messenger: The Story of Joan of Arc, The",
-"Ape, The",
-"Commitments, The",
-"Longest Day, The",
-Poison Ivy: New Seduction,
-"Effect of Gamma Rays on Man-in-the-Moon Marigolds, The",
-"Adventures of Buckaroo Bonzai Across the 8th Dimension, The",
-"Sandpiper, The",
-"Goodbye, 20th Century (Zbogum na dvadesetiot vek)",
-All About My Mother (Todo Sobre Mi Madre),
-"Living Dead Girl, The (La Morte Vivante)",
-March of the Wooden Soldiers (a.k.a. Laurel & Hardy in Toyland),
-"Bicycle Thief, The (Ladri di biciclette)",
-"Shop Around the Corner, The",
-"River Runs Through It, A",
-"Fisher King, The",
-Bay of Blood (Reazione a catena),
-"Distinguished Gentleman, The",
-"Hitch-Hiker, The",
-Spring Fever USA (a.k.a. Lauderdale),
-"End of the Affair, The",
-"Map of the World, A",
-"Grand Illusion (Grande illusion, La)",
-"Great Santini, The",
-"James Dean Story, The",
-"Sea Wolves, The",
-"Three Ages, The",
-"Two Jakes, The",
-"Glass Bottom Boat, The",
-"Cradle Will Rock, The",
-"Green Mile, The",
-"Bat Whispers, The",
-"Last Picture Show, The",
-"7th Voyage of Sinbad, The",
-"Emperor and the Assassin, The (Jing ke ci qin wang)",
-"Falcon and the Snowman, The",
-Ulysses (Ulisse),
-"Talented Mr. Ripley, The",
-Mr. Death: The Rise and Fall of Fred A. Leuchter Jr.,
-"Third Miracle, The",
-"Life and Times of Hank Greenberg, The",
-"Quarry, The",
-"Terrorist, The (Malli)",
-"Way We Were, The",
-"Presidio, The",
-"Last Detail, The",
-Even Dwarfs Started Small (Auch Zwerge haben klein angefangen),
-"Boys from Brazil, The",
-Black Sunday (La Maschera Del Demonio),
-"Snows of Kilimanjaro, The",
-"Loves of Carmen, The",
-"Cry in the Dark, A",
-Vampyros Lesbos (Las Vampiras),
-"Star Is Born, A",
-"Draughtsman's Contract, The",
-Woman in the Dunes (Suna no onna),
-"Not Love, Just Frenzy (Más que amor, frenesí)",
-"Odessa File, The",
-"Saphead, The",
-Kestrel's Eye (Falkens öga),
-"Big Tease, The",
-"Cup, The (Phörpa)",
-"Goodbye Girl, The",
-I Am Cuba (Soy Cuba/Ya Kuba),
-"Hand That Rocks the Cradle, The",
-"League of Their Own, A",
-Hard-Boiled (Lashou shentan),
-Man Bites Dog (C'est arrivé près de chez vous),
-"Boondock Saints, The",
-Beloved/Friend (Amigo/Amado),
-"Brandon Teena Story, The",
-"Tigger Movie, The",
-Not One Less (Yi ge dou bu neng shao),
-"Big Combo, The",
-"Whole Nine Yards, The",
-"Flamingo Kid, The",
-"Man from Laramie, The",
-"McCullochs, The",
-"Big Trees, The",
-Mifune (Mifunes sidste sang),
-"Waiting Game, The",
-"Next Best Thing, The",
-"Year My Voice Broke, The",
-"Legend of Lobo, The",
-"Killing of Sister George, The",
-I'll Never Forget What's 'is Name,
-"Night Visitor, The",
-"Perils of Pauline, The",
-"Raisin in the Sun, A",
-"Closer You Get, The",
-"Ninth Gate, The",
-East-West (Est-ouest),
-"Asphalt Jungle, The",
-"Searchers, The",
-"Devil's Brigade, The",
-Any Number Can Win (Mélodie en sous-sol ),
-"Bridge at Remagen, The",
-"Fantastic Night, The (La Nuit Fantastique)",
-"Ogre, The (Der Unhold)",
-"Taking of Pelham One Two Three, The",
-"Muppet Movie, The",
-"Great Muppet Caper, The",
-"Muppets Take Manhattan, The",
-Sesame Street Presents Follow That Bird,
-"Carriers Are Waiting, The (Les Convoyeurs Attendent)",
-"Mirror, The (Zerkalo)",
-"Trial, The (Le Procès)",
-"Crimson Pirate, The",
-"Good Mother, The",
-"Color of Paradise, The (Rang-e Khoda)",
-Blood and Sand (Sangre y Arena),
-Horror Hotel (a.k.a. The City of the Dead),
-"Place in the Sun, A",
-"Bamba, La",
-"Road to El Dorado, The",
-Autopsy (Macchie Solari),
-"Dorado, El",
-"Hideous Sun Demon, The",
-"Son of the Sheik, The",
-Torso (Corpi Presentano Tracce di Violenza Carnale),
-Solaris (Solyaris),
-"Odd Couple, The",
-"Outlaw Josey Wales, The",
-"End of Violence, The",
-Sacco and Vanzetti (Sacco e Vanzetti),
-"Prince of Tides, The",
-"Postman Always Rings Twice, The",
-Freedom for Us (À nous la liberté ),
-"Actor's Revenge, An (Yukinojo Henge)",
-"Filth and the Fury, The",
-Love and Basketball,
-"Virgin Suicides, The",
-"Law, The (Le Legge)",
-Phantom Love (Ai No Borei),
-"Crow: Salvation, The",
-"Flintstones in Viva Rock Vegas, The",
-"Big Kahuna, The",
-Smiling Fish and Goat on Fire,
-"Idiots, The (Idioterne)",
-"Last September, The",
-"Hidden, The",
-Two Moon Juction,
-Black Tights (Les Collants Noirs),
-"Great Locomotive Chase, The",
-"Idolmaker, The",
-"King of Marvin Gardens, The",
-"Kill, Baby... Kill! (Operazione Paura)",
-"Lords of Flatbush, The",
-Time Masters (Les Maîtres du Temps),
-"Castaway Cowboy, The",
-G. I. Blues,
-"Gay Deceivers, The",
-"Hollywood Knights, The",
-"Myth of Fingerprints, The",
-"Twelve Chairs, The",
-"House of Exorcism, The (La Casa dell'esorcismo)",
-Those Who Love Me Can Take the Train (Ceux qui m'aiment prendront le train),
-Vagabond (Sans toit ni loi),
-"King in New York, A",
-"Fighting Seabees, The",
-Cleo From 5 to 7 (Cléo de 5 à 7),
-Anguish (Angustia),
-"Blood Spattered Bride, The (La Novia Ensangrentada)",
-City of the Living Dead (Paura nella città dei morti viventi),
-Blow-Out (La Grande Bouffe),
-Puppet Master 5: The Final Chapter,
-Retro Puppetmaster,
-"Story of G.I. Joe, The",
-"Man with the Golden Arm, The",
-"Decline of Western Civilization, The",
-"Decline of Western Civilization Part II: The Metal Years, The",
-"Fabulous Baker Boys, The",
-"Toxic Avenger, Part II, The",
-"Toxic Avenger Part III: The Last Temptation of Toxie, The",
-"Brother from Another Planet, The",
-Mad Max 2 (a.k.a. The Road Warrior),
-Live Virgin,
-"Paper Chase, The",
-"Big Carnival, The",
-"Sugarland Express, The",
-"Battleship Potemkin, The (Bronenosets Potyomkin)",
-Butterfly (La Lengua de las Mariposas),
-Time Regained (Le Temps Retrouvé),
-"Me, Myself and Irene",
-"Adventures of Rocky and Bullwinkle, The",
-"Perfect Storm, The",
-"Golden Bowl, The",
-"Kentucky Fried Movie, The",
-"Blood In, Blood Out (a.k.a. Bound by Honor)",
-Daughter of Dr. Jeckyll,
-"Hot Spot, The",
-"Golden Voyage of Sinbad, The",
-Hatchet For the Honeymoon (Rosso Segno Della Follia),
-Shower (Xizhao),
-"Pawnbroker, The",
-"Five Senses, The",
-"Wisdom of Crocodiles, The (a.k.a. Immortality)",
-"In Crowd, The",
-Criminal Lovers (Les Amants Criminels),
-Two Women (La Ciociara),
-"Official Story, The (La Historia Oficial)",
-"Other Side of Sunday, The (Søndagsengler)",
-"Girl on the Bridge, The (La Fille sur le Pont)",
-"Black Sabbath (Tre Volti Della Paura, I)",
-"Brain That Wouldn't Die, The",
-Make Them Die Slowly (Cannibal Ferox),
-And God Created Woman (Et Dieu&#8230;Créa la Femme),
-"Spiral Staircase, The",
-Whatever Happened to Aunt Alice?,
-"Tao of Steve, The",
-"Tic Code, The",
-"Affair of Love, An (Une Liaison Pornographique)",
-"Eyes of Tammy Faye, The",
-"Opportunists, The",
-Godzilla 2000 (Gojira ni-sen mireniamu),
-"Original Kings of Comedy, The",
-All the Rage (a.k.a. It's the Rage),
-"Naked Gun: From the Files of Police Squad!, The",
-"Naked Gun 2 1/2: The Smell of Fear, The",
-"Couch in New York, A",
-"Devil Rides Out, The",
-"Art of War, The",
-"Ballad of Ramblin' Jack, The",
-Anatomy (Anatomie),
-"Watcher, The",
-"Way of the Gun, The",
-Crime and Punishment in Suburbia,
-Goya in Bordeaux (Goya en Bodeos),
-"Uninvited Guest, An",
-"Prince of Central Park, The",
-"Broken Hearts Club, The",
-"Faraway, So Close (In Weiter Ferne, So Nah!)",
-"Bank Dick, The",
-"Creature From the Black Lagoon, The",
-"Giant Gila Monster, The",
-"Invisible Man, The",
-"Killer Shrews, The",
-"Phantom of the Opera, The",
-"Slumber Party Massacre, The",
-"Slumber Party Massacre II, The",
-"Slumber Party Massacre III, The",
-Blood Out (a.k.a. Bound by Honor) Blood In,
-F/X 2,
-,Shanghai Triad (Yao a yao yao dao waipo qiao)
-,Twelve Monkeys
-,the Beloved Country Cry
-,Seven (Se7en)
-,Il (The Postman) Postino
-,The (Le Confessionnal) Confessional
-,French Twist (Gazon maudit)
-,The (Badkonake Sefid ) White Balloon
-,Antonia's Line (Antonia)
-,In the Bleak Midwinter
-,La) Hate (Haine
+ml_title
+Shanghai Triad (Yao a yao yao dao waipo qiao)
+Twelve Monkeys
+the Beloved Country Cry
+Seven (Se7en)
+Il (The Postman) Postino
+The (Le Confessionnal) Confessional
+French Twist (Gazon maudit)
+The (Badkonake Sefid ) White Balloon
+Antonia's Line (Antonia)
+In the Bleak Midwinter
+Hate (La Haine)
+Nobody Loves Me (Keiner liebt mich)
+Steal Little Steal Big
+The Boys of St. Vincent
+The (L' Uomo delle stelle) Star Maker
+The (Saimt el Qusur) Silence of the Palace
+Jupiter's Wife
+Shadows (Cienie)
+Canadian Bacon
+Mute Witness
+The (Les Parapluies de Cherbourg) Umbrellas of Cherbourg
+Thanks for Everything! Julie Newmar To Wong Foo
+Burnt By the Sun (Utomlyonnye solntsem)
+Before the Rain (Pred dozhdot)
+Don Juan DeMarco
+Dolores Claiborne
+Farinelli: il castrato
+Gordy
+Houseguest
+Heavyweights
+The Jerky Boys
+L' Enfer
+Like Water for Chocolate (Como agua para chocolate)
+Major Payne
+My Crazy Life (Mi vida loca)
+Losing Isaiah
+New York Cop
+Beyond Bedlam
+Poison Ivy II
+The (a.k.a. Leon: The Professional) Professional
+Pushing Hands
+Picture Bride
+Queen Margot (La Reine Margot)
+Ready to Wear (Pret-A-Porter)
+Green Firecracker Red Firecracker
+Strawberry and Chocolate (Fresa y chocolate)
+Swimming with Sharks
+To Live (Huozhe)
+Tales From the Crypt Presents: Demon Knight
+The  Queen of the Desert Adventures of Priscilla
+Backbeat
+The (Die Macht der Bilder)  Horrible Life of Leni Riefenstahl Wonderful
+Wes Craven's New Nightmare
+Red Rock West
+Boys Life
+Le Colonel Chabert
+Desert Winds
+Open Season
+Two Crimes
+Highlander III: The Sorcerer
+In the Mouth of Madness
+Being Human
+Blink
+The  But Came Down a Mountain Englishman Who Went Up a Hill
+Killing Zoe
+In the Realm of the Senses (Ai no corrida)
+Robert A. Heinlein's The Puppet Masters
+Savage Nights (Les Nuits fauves)
+France Paris
+The  Maine Beans of Egypt
+Killer (Bulletproof Heart)
+Naked in New York
+The (Kådisbellan ) Slingshot
+The Wedding Gift
+Professore! (Io speriamo che me la cavo ) Ciao
+The Hour of the Pig
+Metisse (Café au Lait)
+Dear Diary (Caro Diario)
+I Don't Want to Talk About It (De eso no se habla)
+Window to Paris
+The (Wu Kui) Wooden Man's Bride
+Love Bye Bye
+Bread and Chocolate (Pane e cioccolata)
+The (La Flor de Mi Secreto) Flower of My Secret
+Two Much
+Scream of Stone (Schrei aus Stein)
+My Favorite Season
+Asfour Stah
+Land and Freedom (Tierra y libertad)
+Jack and Sarah
+Big City (Un indien dans la ville) Little Indian
+Cold Fever (Á köldum klaka)
+302 301
+Mutters Courage
+Yankee Zulu
+All Things Fair
+Bloodsport 2
+The (Apur Sansar) World of Apu
+Hostile Intentions
+Some Folks Call It a Sling Blade
+Clean Slate (Coup de Torchon)
+The (L' Oeil de Vichy) Eye of Vichy
+It's My Party
+The (Das Versprechen) Promise
+Under the Domin Tree (Etz Hadomim Tafus)
+Delta of Venus
+The (Le Hussard sur le toit) Horseman on the Roof
+Switchblade Sisters
+Mouth to Mouth (Boca a boca)
+The (Les Visiteurs) Visitors
+Halfmoon (Paul Bowles - Halbmond)
+Two Friends
+or This Dream People Call Human Life Institute Benjamenta
+The Low Life
+Cemetery Man (Dellamorte Dellamore)
+Le Garcu
+Ghost in the Shell (Kokaku kidotai)
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+Carmen Miranda: Bananas Is My Business
+The (Khomreh) Jar
+The (a.k.a. Summer Fling) Last of the High Kings
+La (Life is Rosey) Vie est belle
+Touki Bouki (Journey of the Hyena)
+Wend Kuuni (God's Gift)
+Spirits of the Dead (Tre Passi nel Delirio)
+Independence Day (ID4)
+The Gate of Heavenly Peace
+Worst of All (la peor de todas Yo) I
+An Unforgettable Summer
+The  His Life and Music Last Klezmer: Leopold Kozlowski
+My Life and Times With Antonin Artaud (En compagnie d'Antonin Artaud)
+Midnight Dancers (Sibak)
+The (La Vieille qui marchait dans la mer) Old Lady Who Walked in the Sea
+Rendezvous in Paris (Les Rendez-vous de Paris)
+Der Bewegte Mann
+Magic Hunter
+Power 98
+Death in the Garden (La Mort en ce jardin)
+The Crude Oasis
+La Collectionneuse
+Echte Kerle
+Diebinnen
+The (O Convento) Convent
+Eyes Without a Face
+Tales from the Crypt Presents: Bordello of Blood
+The Story of Xinghua
+The (Tianguo niezi) Day the Sun Turned Cold
+The (Narayama Bushiko) Ballad of Narayama
+Every Other Weekend
+Maybe Not (Der Bewegte Mann) Maybe
+Celestial Clockwork
+Death in Brunswick
+Lover's Knot
+Aiqing wansui
+Shadow of Angels (Schatten der Engel)
+Police Story 4: Project S (Chao ji ji hua)
+Liebelei
+Sunset Blvd. (a.k.a. Sunset Boulevard)
+Beat the Devil
+The (Der Blaue Engel) Blue Angel
+In the Line of Duty 2
+The Pompatus of Love
+Small Wonders
+Schlafes Bruder (Brother of Sleep)
+The (L'Associe)(1982) Associate
+King of the Wild Frontier Davy Crockett
+The Love Bug
+000 Leagues Under the Sea 20
+Bitter Sugar (Azucar Amargo)
+William Shakespeare's Romeo and Juliet
+The Woman in Question
+My Sweet Murder
+The Sexual Life of the Belgians
+Monty Python's Life of Brian
+Children of the Corn IV: The Gathering
+Charm's Incidents
+Microcosmos (Microcosmos: Le peuple de l'herbe)
+A (La Fille Seule) Single Girl
+The (Le Huitième jour ) Eighth Day
+Tashunga
+Manon of the Spring (Manon des sources)
+The Line King: Al Hirschfeld
+JLG/JLG - autoportrait de décembre
+The (Le Retour de Martin Guerre) Return of Martin Guerre
+The (Zaproszenie) Invitation
+The (I Bambini ci guardano) Children Are Watching us
+La Symphonie pastorale
+The (Die Blechtrommel) Tin Drum
+Two or Three Things I Know About Her
+The (La Double Vie de Véronique) Double Life of Veronique
+and Videotape  Lies Sex
+The  The Bad and The Ugly Good
+Wings of Desire (Der Himmel über Berlin)
+The (Le Grand Bleu) Big Blue
+The (Die xue shuang xiong) Killer
+The (Das Boot) Boat
+The (Det Sjunde inseglet) Seventh Seal
+Rosencrantz and Guildenstern Are Dead
+Nikita (La Femme Nikita)
+My Life as a Dog (Mitt liv som hund)
+Until the End of the World (Bis ans Ende der Welt)
+Blood For Dracula (Andy Warhol's Dracula)
+Nosferatu (eine Symphonie des Grauens Nosferatu)
+Nosferatu a Venezia
+Identification of a Woman (Identificazione di una donna)
+The (Il Giardino dei Finzi-Contini) Garden of Finzi-Contini
+Zero Kelvin (Kjærlighetens kjøtere)
+The (Il Cristo proibito) Forbidden Christ
+I Can't Sleep (J'ai pas sommeil)
+Star Trek: The Wrath of Khan
+Thieves (Les Voleurs)
+Jackie Chan's First Strike
+Prisoner of the Mountains (Kavkazsky Plennik)
+Salut cousin!
+Jungle2Jungle (a.k.a. Jungle 2 Jungle)
+Temptress Moon (Feng Yue)
+N.M. Truth or Consequences
+The (La Promesse) Promise
+Shall We Dance? (Shall We Dansu?)
+or Not To Have
+Roseanna's Grave (For Roseanna)
+When the Cats Away (Chacun cherche son chat)
+Contempt (Le Mépris)
+Guido Kiss Me
+Indian Summer (a.k.a. Alive & Kicking)
+Mrs. Brown (Mrs. Brown Her Majesty)
+I Love You Not I Love You
+Mouse Hunt
+Other Rooms Other Voices
+My Life in Pink (Ma vie en rose)
+3 Ninjas: High Noon On Mega Mountain
+Midaq Alley (El Callejón de los milagros)
+Duoluo tianshi
+Mat' i syn
+A Further Gesture
+U.S. Marshalls
+El Callejón de los milagros
+Hana-bi
+The Player's Club
+Don't Touch Me! I Love You
+Character (Karakter)
+Texas Pop. 81 Dancer
+The (Bacheha-Ye Aseman) Children of Heaven
+Kramer Vs. Kramer
+A Nightmare on Elm Street Part 2: Freddy's Revenge
+Friday the 13th Part 3: 3D
+Then the Fireworks This World
+Seven Samurai (The Magnificent Seven) (Shichinin no samurai)
+East Palace West Palace (Dong gong xi gong)
+000 Duck 000 $1
+I Blew Up the Kid Honey
+I Shrunk the Kids Honey
+Seventh Heaven (Le Septième ciel)
+The (Il Portiere di notte) Night Porter
+Last Rites First Love
+The Saltmen of Tibet
+Autumn Sonata (Höstsonaten )
+The Slums of Beverly Hills
+The (Il Testimone dello sposo) Best Man
+Part 2 Henry: Portrait of a Serial Killer
+Wonderland Next Stop
+Strike! (The Hairy Bird a.k.a. All I Wanna Do)
+The Navigator: A Mediaeval Odyssey
+See the Sea (Regarde la mer)
+Waltzes from Vienna
+Number Seventeen
+Rich and Strange
+Juno and Paycock
+Seven Beauties (Pasqualino Settebellezze)
+Swept Away (Travolti da un insolito destino nell'azzurro mare d'Agosto)
+U.S.A. Grandview
+Master Ninja I
+The (Die Siebtelbauern) Inheritors
+Life Is Beautiful (La Vita è bella)
+Hands on a Hard Body
+Nights of Cabiria (Le Notti di Cabiria)
+Central Station (Central do Brasil)
+The (Festen) Celebration
+Godzilla (Gojira)
+King Kong vs. Godzilla (Kingukongu tai Gojira)
+Jerry Springer: Ringmaster
+Steam: The Turkish Bath (Hamam)
+The  Part II Karate Kid
+24 7: Twenty Four Seven
+The Gate II: Trespassers
+Dry Cleaning (Nettoyage à sec)
+The (El Día de la bestia) Day of the Beast
+Bullets and Octane  Guts Blood
+The (La Planète sauvage) Fantastic Planet
+The (Sib) Apple
+The (L' École de la chair) School of Flesh
+I Stand Alone (Seul contre tous)
+The (La Vie rêvée des anges) Dreamlife of Angels
+etc. Love
+Twin Dragons (Shuang long hui)
+The (Los Amantes del Círculo Polar) Lovers of the Arctic Circle
+Jeanne and the Perfect Guy (Jeanne et le garçon formidable)
+The (Il Mostro) Monster
+Open Your Eyes (Abre los ojos)
+Photographer (Fotoamator)
+Mighty Peking Man (Hsing hsing wang)
+The (Bian Lian) King of Masks
+Chopping Mall (a.k.a. Killbots)
+Xiu Xiu: The Sent-Down Girl (Tian yu)
+Black Mask (Hak hap)
+Besieged (L' Assedio)
+The (Rekopis znaleziony w Saragossie) Saragossa Manuscript
+Earth Vs. the Flying Saucers
+Run Deep Run Silent
+Eternity and a Day (Mia eoniotita ke mia mera )
+The (Le Nain rouge) Red Dwarf
+The (Le Violon rouge) Red Violin
+The (Leggenda del pianista sull'oceano) Legend of 1900
+Run Lola Run (Lola rennt)
+The (Le Dîner de cons) Dinner Game
+Longer and Uncut South Park: Bigger
+The (Les Amants du Pont-Neuf) Lovers on the Bridge
+Early September (début septembre Fin août) Late August
+An (Conte d'automne) Autumn Tale
+The (Les Quatre cents coups) 400 Blows
+Jules and Jim (Jules et Jim)
+Ménage (Tenue de soirée)
+Allan Quartermain and the Lost City of Gold
+The (A Játékos) Gambler
+Alice and Martin (Alice et Martin)
+I Remember Marcello Mastroianni: I Remember Yes
+The (a.k.a. Omen III: The Final Conflict) Final Conflict
+Oscar and Lucinda (a.k.a. Oscar & Lucinda)
+Iron Eagle IV
+The (1. Teil: Der Goldene See Die Spinnen) Spiders
+Cabaret Balkan (Bure Baruta)
+West Beirut (West Beyrouth)
+White Cat (beli macor Crna macka) Black Cat
+Communion (Sweet Alice/Holy Terror a.k.a. Alice)
+Fright Night Part II
+The (La Séparation) Separation
+Operation Condor (Feiying gaiwak)
+Operation Condor 2 (Longxiong hudi)
+Alaska Mystery
+Texas Happy
+And the Ship Sails On (E la nave va)
+Three Secretaries and Me Five Wives
+L' Ennui
+The (El Abuelo) Grandfather
+Children of Paradise (Les enfants du paradis)
+Citizen's Band (a.k.a. Handle with Care)
+Drunken Master (Zui quan)
+The (Il Conformista) Conformist
+Time of the Gypsies (Dom za vesanje)
+The (Le Feu Follet) Fire Within
+A (El Amor Brujo) Love Bewitched
+Man Facing Southeast (Hombre Mirando al Sudeste)
+Hard 8 (a.k.a. Hard Eight a.k.a. Sydney)
+A (Un Homme et une Femme) Man and a Woman
+Red Sorghum (Hong Gao Liang)
+Can You Spare a Dime? Brother
+The (Mononoke Hime) Princess Mononoke
+My Best Fiend (Mein liebster Feind)
+Train of Life (Train De Vie)
+Portraits Chinois
+Don't They? They Shoot Horses
+Poison Ivy: New Seduction
+The Adventures of Buckaroo Bonzai Across the 8th Dimension
+20th Century (Zbogum na dvadesetiot vek) Goodbye
+All About My Mother (Todo Sobre Mi Madre)
+The (La Morte Vivante) Living Dead Girl
+March of the Wooden Soldiers (a.k.a. Laurel & Hardy in Toyland)
+The (Ladri di biciclette) Bicycle Thief
+Bay of Blood (Reazione a catena)
+Spring Fever USA (a.k.a. Lauderdale)
+Grand Illusion (La Grande illusion)
+The Three Ages
+The Cradle Will Rock
+The (Jing ke ci qin wang) Emperor and the Assassin
+The Alley Cats
+The Falcon and the Snowman
+Room at the Top
+Ulysses (Ulisse)
+Next Friday
+Mr. Death: The Rise and Fall of Fred A. Leuchter Jr.
+Interrupted Girl
+My Dog Skip
+The (Malli) Terrorist
+Even Dwarfs Started Small (Auch Zwerge haben klein angefangen)
+Black Sunday (La Maschera Del Demonio)
+Vampyros Lesbos (Las Vampiras)
+Woman in the Dunes (Suna no onna)
+Hellhounds on My Trail
+Just Frenzy (frenesí Más que amor) Not Love
+Another Man's Poison
+Train Ride to Hollywood
+Kestrel's Eye (Falkens öga)
+The (Phörpa) Cup
+Santitos
+I Am Cuba (Soy Cuba/Ya Kuba)
+Hard-Boiled (Lashou shentan)
+Man Bites Dog (C'est arrivé près de chez vous)
+Beloved/Friend (Amigo/Amado)
+Not One Less (Yi ge dou bu neng shao)
+Black Tar Heroin: The Dark End of the Street
+A Dog's Life
+The McCullochs
+Deterrence
+Mifune (Mifunes sidste sang)
+The Waiting Game
+Beyond the Mat
+It Happened Here
+I'll Never Forget What's 'is Name
+Bride of the Monster
+the Lonesome Cougar Charlie
+The Night Visitor
+The Closer You Get
+The Ninth Gate
+East-West (Est-ouest)
+Where Eagles Dare
+Any Number Can Win (Mélodie en sous-sol )
+Daughters of the Dust
+The (La Nuit Fantastique) Fantastic Night
+The (Der Unhold) Ogre
+Sesame Street Presents Follow That Bird
+The (Les Convoyeurs Attendent) Carriers Are Waiting
+The (Zerkalo) Mirror
+The (Le Procès) Trial
+Creature Comforts
+Death Wish V: The Face of Death
+Vietnam Good Morning
+The (Rang-e Khoda) Color of Paradise
+Waking the Dead
+Blood and Sand (Sangre y Arena)
+Solar Crisis
+Dersu Uzala
+Horror Hotel (a.k.a. The City of the Dead)
+Autopsy (Macchie Solari)
+El Dorado
+The Hideous Sun Demon
+Torso (Corpi Presentano Tracce di Violenza Carnale)
+Solaris (Solyaris)
+Me Myself I
+Book and Candle Bell
+Sacco and Vanzetti (Sacco e Vanzetti)
+Freedom for Us (À nous la liberté )
+An (Yukinojo Henge) Actor's Revenge
+Passion of Mind
+Love and Basketball
+The (Le Legge) Law
+Phantom Love (Ai No Borei)
+Stacy's Knights
+The Big Kahuna
+Bossa Nova
+Smiling Fish and Goat on Fire
+The (Idioterne) Idiots
+Time Code
+Two Moon Juction
+Black Tights (Les Collants Noirs)
+Baby... Kill! (Operazione Paura) Kill
+Time Masters (Les Maîtres du Temps)
+Held Up
+G. I. Blues
+Saludos Amigos
+8 1/2 Women
+The (La Casa dell'esorcismo) House of Exorcism
+It's in the Water
+Those Who Love Me Can Take the Train (Ceux qui m'aiment prendront le train)
+Vagabond (Sans toit ni loi)
+Cleo From 5 to 7 (Cléo de 5 à 7)
+Running Free
+Anguish (Angustia)
+The (La Novia Ensangrentada) Blood Spattered Bride
+City of the Living Dead (Paura nella città dei morti viventi)
+The Endless Summer
+Blow-Out (La Grande Bouffe)
+Quatermass II
+Puppet Master 5: The Final Chapter
+Retro Puppetmaster
+Rent-A-Cop
+The Story of G.I. Joe
+Light Years
+The Toxic Avenger
+The  Part II Toxic Avenger
+Mad Max 2 (a.k.a. The Road Warrior)
+Nine 1/2 Weeks
+Trixie
+Live Virgin
+One False Move
+The Big Carnival
+The (Bronenosets Potyomkin) Battleship Potemkin
+Butterfly (La Lengua de las Mariposas)
+Time Regained (Le Temps Retrouvé)
+Myself and Irene Me
+The Adventures of Rocky and Bullwinkle
+Blood Out (a.k.a. Bound by Honor) Blood In
+Daughter of Dr. Jeckyll
+F/X 2
+The Golden Voyage of Sinbad
+Hatchet For the Honeymoon (Rosso Segno Della Follia)
+Nekromantik
+Shower (Xizhao)
+Blowup
+The Pawnbroker
+The (a.k.a. Immortality) Wisdom of Crocodiles
+Pokémon the Movie 2000
+Criminal Lovers (Les Amants Criminels)
+Two Women (La Ciociara)
+The (La Historia Oficial) Official Story
+The (Søndagsengler) Other Side of Sunday
+The (La Fille sur le Pont) Girl on the Bridge
+Black Sabbath (I Tre Volti Della Paura)
+Make Them Die Slowly (Cannibal Ferox)
+And God Created Woman (Et Dieu&#8230;Créa la Femme)
+She Wolf of the SS Ilsa
+Whatever Happened to Aunt Alice?
+An (Une Liaison Pornographique) Affair of Love
+Godzilla 2000 (Gojira ni-sen mireniamu)
+All the Rage (a.k.a. It's the Rage)
+The Naked Gun 2 1/2: The Smell of Fear
+Last Summer Suddenly
+Catfish in Black Bean Sauce
+Back Stage
+Anatomy (Anatomie)
+Crime and Punishment in Suburbia
+Goya in Bordeaux (Goya en Bodeos)
+An Uninvited Guest
+The Prince of Central Park
+So Close (So Nah! In Weiter Ferne) Faraway
+The Creature From the Black Lagoon
+Kronos
+The Phantom of the Opera
+The Slumber Party Massacre II
+The Slumber Party Massacre III
