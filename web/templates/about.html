@@ -1,0 +1,40 @@
+{% extends '_base.html' %}
+{% set active_page = "about" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<section class="container my-5">
+    <h1 class=" mb-5">About MoReBo</h1>
+    <p class="lead mb-5">MoReBo is a movie recommendation bot that was created as project at ZHAW in the
+        module <a class="text-white">Python-Grundlagen & Anwendung in Data Science</a>.</p>
+    <h2 class="text-center mb-4">How MoReBo Works</h2>
+    <p class="text-center mb-5">MoReBo uses machine learning algorithms to analyze the movies you like and recommend
+        similar movies that you'll love. It's like having your own personal movie curator!</p>
+    <h2 class="text-center mb-4">Meet the Team</h2>
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fabio A.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jan S.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dominic P.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

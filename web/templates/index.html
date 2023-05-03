@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+{% set active_page = "index" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1 class="text-center mb-5">Welcome to MoReBo</h1>
+<p class="lead text-center mb-5">MoReBo is your personal movie recommendation bot. Simply tell us what you like, and
+  we'll recommend movies you'll love.</p>
+<form class="mb-5">
+  <div class="form-group">
+    <label for="movieInput">What's your favorite movie?</label>
+    <input type="text" class="form-control" id="movieInput" placeholder="Enter movie title">
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Get Recommendations</button>
+</form>
+{% endblock %}
