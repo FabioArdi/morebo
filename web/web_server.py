@@ -17,6 +17,7 @@ def movies():
 def about():
     return render_template("about.html")
 
+
 # ###############################
 # API Endpoints
 # ###############################
@@ -24,6 +25,13 @@ def about():
 def do_sth():
     return "Endpoint not implemented!"
 
+
+# ###############################
+# Error Handler
+# ###############################
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('index.html') # redirect to index.html
 
 if __name__ == '__main__':
     app.run(debug=True)
