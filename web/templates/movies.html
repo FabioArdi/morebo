@@ -5,23 +5,29 @@
 <h1 class="text-center mb-5">Movies</h1>
 <p class="lead text-center mb-5">Below you can find a list of all currently available movies.</p>
 <div class="row row-cols-1 row-cols-md-2 g-4">
+    {% for movie in movies %}
     <div class="col">
         <div class="card h-100">
             <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Movie</h5>
+                <h5 class="card-title">{{ movie.Title }}</h5>
                 <p class="card-text"></p>
             </div>
         </div>
     </div>
-    <div class="col">
-        <div class="card h-100">
-            <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Movie</h5>
-                <p class="card-text"></p>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="{{url_for('movies', page=1)}}">1</a></li>
+          <li class="page-item"><a class="page-link" href="{{url_for('movies', page=2)}}">2</a></li>
+          <li class="page-item"><a class="page-link" href="{{url_for('movies', page=3)}}">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
 </div>
 {% endblock %}

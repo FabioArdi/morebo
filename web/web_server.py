@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -9,9 +10,13 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/movies")
-def movies():
-    return render_template("movies.html")
+@app.route("/movies/", defaults={'page': 1})
+@app.route("/movies/<int:page>")
+def movies(page):
+    for movie in get_movies_page(page):
+        print(type(movie))
+        print('#'*50)
+    return render_template("movies.html", page=page, movies=get_movies_page(page))
 
 @app.route("/about")
 def about():
@@ -21,9 +26,23 @@ def about():
 # ###############################
 # API Endpoints
 # ###############################
-@app.route("/api/?")
-def do_sth():
-    return "Endpoint not implemented!"
+@app.route("/api/movies/")
+def get_movies():
+    movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    return movies.to_dict(orient='records')
+
+@app.route("/api/movies/page/<int:page>")
+def get_movies_page(page):
+    movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    return movies.iloc[page*10:(page+1)*10].to_dict(orient='records')
+
+@app.route("/api/movies/<int:movie_id>")
+def get_movie(movie_id):
+    movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movie = movies[movies['ml_movieId'] == movie_id]
+    if movie.empty:
+        return jsonify({'error': 'not found'}), 404
+    return movie.to_dict(orient='records')
 
 
 # ###############################
