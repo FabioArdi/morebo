@@ -13,9 +13,6 @@ def index():
 @app.route("/movies/", defaults={'page': 1})
 @app.route("/movies/<int:page>")
 def movies(page):
-    for movie in get_movies_page(page):
-        print(type(movie))
-        print('#'*50)
     return render_template("movies.html", page=page, movies=get_movies_page(page))
 
 @app.route("/about")
@@ -33,8 +30,9 @@ def get_movies():
 
 @app.route("/api/movies/page/<int:page>")
 def get_movies_page(page):
+    page_size = 10 # Nr of movies per page
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
-    return movies.iloc[page*10:(page+1)*10].to_dict(orient='records')
+    return movies.iloc[page * page_size:(page+1) * page_size].to_dict(orient='records')
 
 @app.route("/api/movies/<int:movie_id>")
 def get_movie(movie_id):
