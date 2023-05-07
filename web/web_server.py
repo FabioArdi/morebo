@@ -10,10 +10,12 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/movies/", defaults={'page': 1})
-@app.route("/movies/<int:page>")
-def movies(page):
-    return render_template("movies.html", page=page, movies=get_movies_page(page))
+@app.route("/movies/", defaults={'page': 1, 'page_size': 10})
+@app.route("/movies/<int:page>", defaults={'page_size': 10})
+@app.route("/movies/<int:page>/<int:page_size>")
+def movies(page, page_size):
+    print(page_size)
+    return render_template("movies.html", page=page, page_size=page_size, movies=get_movies_page(page, page_size))
 
 @app.route("/about")
 def about():
@@ -28,9 +30,9 @@ def get_movies():
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
     return movies.to_dict(orient='records')
 
-@app.route("/api/movies/page/<int:page>")
-def get_movies_page(page):
-    page_size = 10 # Nr of movies per page
+@app.route("/api/movies/page/<int:page>", defaults={'page_size': 10})
+@app.route("/api/movies/page/<int:page>/<int:page_size>")
+def get_movies_page(page, page_size):
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
     return movies.iloc[page * page_size:(page+1) * page_size].to_dict(orient='records')
 

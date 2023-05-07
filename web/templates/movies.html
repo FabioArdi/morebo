@@ -4,30 +4,78 @@
 {% block content %}
 <h1 class="text-center mb-5">Movies</h1>
 <p class="lead text-center mb-5">Below you can find a list of all currently available movies.</p>
-<div class="row row-cols-1 row-cols-md-2 g-4">
-    {% for movie in movies %}
-    <div class="col">
-        <div class="card h-100">
-            <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{ movie.Title }}</h5>
-                <p class="card-text"></p>
-            </div>
-        </div>
+<div class="row row-cols-4 g-4">
+  {% for movie in movies %}
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ movie.Title }}</h5>
+        <p class="card-text"></p>
+      </div>
     </div>
-    {% endfor %}
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            <a class="page-link">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="{{url_for('movies', page=1)}}">1</a></li>
-          <li class="page-item"><a class="page-link" href="{{url_for('movies', page=2)}}">2</a></li>
-          <li class="page-item"><a class="page-link" href="{{url_for('movies', page=3)}}">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-          </li>
-        </ul>
-      </nav>
+  </div>
+  {% endfor %}
 </div>
+
+<hr>
+
+<!-- Navigation -->
+<div class="row">
+  <ul class="pagination justify-content-center">
+    {% if page == 1 %}
+    <li class="page-item disabled"><a class="page-link">Previous</a></li>
+    <li class="page-item active">
+      <a class="page-link" onclick="change_page({{page}})">{{page}}</a>
+    </li>
+    <li class="page-item"><a class="page-link" onclick="change_page({{page}}+1)">{{page+1}}</a></li>
+    <li class="page-item"><a class="page-link" onclick="change_page({{page}}+2)">{{page+2}}</a></li>
+    <li class="page-item"><a class="page-link" onclick="change_page({{page}}+1)">Next</a></li>
+    {% elif page >= 2 %}
+    <li class="page-item"><a class="page-link" onclick="change_page({{page}}-1)">Previous</a></li>
+    <li class="page-item"><a class="page-link" onclick="change_page({{page}}-1)">{{page-1}}</a></li>
+    <li class="page-item active">
+      <a class="page-link" onclick="change_page({{page}})">{{page}}</a>
+    </li>
+    <li class="page-item"><a class="page-link" onclick="change_page({{page}}+1)">{{page+1}}</a></li>
+    <li class="page-item"><a class="page-link" onclick="change_page({{page}}+1)">Next</a></li>
+    {% endif %}
+  </ul>
+  <label class="input-group-text" for="moviesPerPage">Movies per page</label>
+  <select class="form-select" id="moviesPerPage">
+    {% if page_size == 10 %}
+    <option selected value="10">10</option>
+    {% else %}
+    <option value="10">10</option>
+    {% endif %}
+    {% if page_size == 20 %}
+    <option selected value="20">20</option>
+    {% else %}
+    <option value="20">20</option>
+    {% endif %}
+    {% if page_size == 50 %}
+    <option selected value="50">50</option>
+    {% else %}
+    <option value="50">50</option>
+    {% endif %}
+    {% if page_size == 100 %}
+    <option selected value="100">100</option>
+    {% else %}
+    <option value="100">100</option>
+    {% endif %}
+  </select>
+</div>
+
+<script>
+  const selectElement = document.querySelector("#moviesPerPage");
+  var moviesPerPage = document.querySelector("#moviesPerPage").value;
+
+  selectElement.addEventListener("change", (event) => {
+    moviesPerPage = event.target.value;
+  });
+
+  function change_page(page) {
+    document.location.href = "{{ url_for('movies') }}" + page + '/' + moviesPerPage;
+  }
+</script>
 {% endblock %}
