@@ -4,14 +4,66 @@
 {% block content %}
 <h1 class="text-center mb-5">Movies</h1>
 <p class="lead text-center mb-5">Below you can find a list of all currently available movies.</p>
-<div class="row row-cols-4 g-4">
+
+<!-- Movie list -->
+<div class="row row-cols-3 g-3 text-start">
   {% for movie in movies %}
   <div class="col">
     <div class="card h-100">
-      <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
+      <img src="{{ movie.Poster }}" class="card-img-top" alt="No image available" onerror="this.onerror=null; this.src='/static/no-image.png'">
       <div class="card-body">
-        <h5 class="card-title">{{ movie.Title }}</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title" style="font-size: medium;">{{ movie.Title }}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">{{ movie.Year }}</h6>
+        <p class="card-text"> </p>
+      </div>
+      <div class="card-footer text-end">
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movieModal{{loop.index}}">More
+          info</a>
+      </div>
+    </div>
+
+    <!-- Generate info modal for every movie -->
+    <div class="modal fade" id="movieModal{{loop.index}}" tabindex="-1" aria-labelledby="movieModalLabel{{loop.index}}"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5 pe-2" id="movieModalLabel{{loop.index}}">{{movie.Title}}</h5>
+            {% for genre in movie.Genre.split(',') %}
+            <span class="badge rounded-pill text-bg-secondary me-1">{{genre}}</span>
+            {% endfor %}
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row mb-5">
+                <div class="col-md-8">
+                  <p class="lead">{{movie.Plot}}</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="{{movie.Poster}}" class="img-fluid rounded" alt="No image available">
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <p><strong>Release date: </strong>{{movie.Released}}</p>
+                </li>
+                <li class="list-group-item">
+                  <p><strong>Director: </strong>{{movie.Director}}</p>
+                </li>
+                <li class="list-group-item">
+                  <p><strong>Writer: </strong>{{movie.Writer}}</p>
+                </li>
+                <li class="list-group-item">
+                  <p><strong>Actors: </strong>{{movie.Actors}}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -20,7 +72,7 @@
 
 <hr>
 
-<!-- Navigation -->
+<!-- Pagination -->
 <div class="row">
   <ul class="pagination justify-content-center">
     {% if page == 1 %}
@@ -41,6 +93,8 @@
     <li class="page-item"><a class="page-link" onclick="change_page({{page}}+1)">Next</a></li>
     {% endif %}
   </ul>
+
+  <!-- Movies per page selector -->
   <label class="input-group-text" for="moviesPerPage">Movies per page</label>
   <select class="form-select" id="moviesPerPage">
     {% if page_size == 10 %}
