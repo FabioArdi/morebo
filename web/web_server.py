@@ -28,12 +28,14 @@ def about():
 @app.route("/api/movies/")
 def get_movies():
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movies = movies.sort_values(by=['Title']) # order movies by title
     return movies.to_dict(orient='records')
 
 @app.route("/api/movies/page/<int:page>", defaults={'page_size': 10})
 @app.route("/api/movies/page/<int:page>/<int:page_size>")
 def get_movies_page(page, page_size):
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movies = movies.sort_values(by=['Title']) # order movies by title
     return movies.iloc[page * page_size:(page+1) * page_size].to_dict(orient='records')
 
 @app.route("/api/movies/<int:movie_id>")
