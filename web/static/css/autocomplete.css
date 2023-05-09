@@ -1,0 +1,37 @@
+ /* highlightTyped use mark */
+ .autocomplete-menu mark {
+     text-decoration: underline;
+     background: none;
+     color: currentColor;
+     padding: 0;
+ }
+
+ /* Optional nicer scrollbars */
+ .autocomplete-menu {
+     --scroller-color: 0, 0%;
+     --scroller-color-lightness: 80%;
+     --scroller-bg-lightness: 90%;
+     --scroller-hover-factor: 0.8;
+     --scroller-thumb: hsl(var(--scroller-color), var(--scroller-color-lightness));
+     /* Replicate hover for webkit */
+     --scroller-thumb-hover: hsl(var(--scroller-color), calc(var(--scroller-color-lightness) * var(--scroller-hover-factor)));
+     --scroller-background: hsl(var(--scroller-color), calc(var(--scroller-bg-lightness)));
+     scrollbar-color: var(--scroller-thumb) var(--scroller-background);
+     scrollbar-width: thin;
+ }
+
+ .autocomplete-menu::-webkit-scrollbar {
+     width: 8px;
+ }
+
+ .autocomplete-menu::-webkit-scrollbar-track {
+     background: var(--scroller-background);
+ }
+
+ .autocomplete-menu::-webkit-scrollbar-thumb {
+     background: var(--scroller-thumb);
+ }
+
+ .autocomplete-menu::-webkit-scrollbar-thumb:hover {
+     background: var(--scroller-thumb-hover);
+ }

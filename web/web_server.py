@@ -31,6 +31,13 @@ def get_movies():
     movies = movies.sort_values(by=['Title']) # order movies by title
     return movies.to_dict(orient='records')
 
+@app.route("/api/movies/title/")
+def get_movie_titles():
+    movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movies = movies.sort_values(by=['Title']) # order movies by title
+    movies = movies['Title']
+    return movies.to_dict()
+
 @app.route("/api/movies/page/<int:page>", defaults={'page_size': 10})
 @app.route("/api/movies/page/<int:page>/<int:page_size>")
 def get_movies_page(page, page_size):

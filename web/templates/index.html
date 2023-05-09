@@ -2,6 +2,20 @@
 {% set active_page = "index" %}
 {% block title %}Home{% endblock %}
 {% block content %}
+<link href="/static/css/autocomplete.css" rel="stylesheet">
+<script type="module">
+  //Source: https://github.com/lekoala/bootstrap5-autocomplete
+  import Autocomplete from "https://cdn.jsdelivr.net/gh/lekoala/bootstrap5-autocomplete@master/autocomplete.js";
+  Autocomplete.init("input.autocomplete", {
+    server: "/api/movies/title/",
+    valueField: "id",
+    labelField: "title",
+    highlightTyped: true,
+    maximumItems: 4,
+    fixed: true, // fix overflow issues
+    notFoundMessage: "Movie not found",
+  });
+</script>
 <style>
   .carousel-item {
     transition: transform .5s ease-in-out;
@@ -60,18 +74,23 @@
   <div class="carousel-inner">
     <!-- Option 1: Enter favourite movie -->
     <div class="carousel-item active mt-5">
-      <div class="form-group">
-        <input type="text" class="form-control" id="movieInput" placeholder="Enter your favourite movie title">
+      <div class="input-group has-validation">
+        <input type="text" class="form-control autocomplete" id="movieInput"
+          placeholder="Enter your favourite movie title">
+        <div class="invalid-feedback">
+          Please select a movie from the list.
+        </div>
       </div>
-      <button type="submit" class="btn btn-primary mt-3">Get Recommendations</button>
+      <button class="btn btn-primary mt-3" onclick="getSingleRecommendations()">Get
+        Recommendations</button>
     </div>
     <!-- Option 2: Rate multiple movies -->
     <div class="carousel-item">
-      <div class="form-group mt-5">
+      <div class="input-group mt-5" id="multipleMovies">
         {% set movie_names = ['Inception', 'The Dark Knight', 'The Matrix', 'Interstellar', 'The Prestige'] %}
         {% for i in range(5) %}
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="{{movie_names[i]}}">
+        <div class="input-group mb-3 has-validation">
+          <input type="text" class="form-control autocomplete" placeholder="{{movie_names[i]}}">
           <form>
             <input class="star star-5" id="star-{{i}}-5" type="radio" name="star" />
             <label class="star star-5" for="star-{{i}}-5"></label>
@@ -84,10 +103,13 @@
             <input class="star star-1" id="star-{{i}}-1" type="radio" name="star" />
             <label class="star star-1" for="star-{{i}}-1"></label>
           </form>
+          <div class="invalid-feedback">
+            Please select a movie from the list.
+          </div>
         </div>
         {% endfor %}
       </div>
-      <button type="submit" class="btn btn-primary mt-3">Get Recommendations</button>
+      <button class="btn btn-primary mt-3" onclick="getMultipleRecommendations()">Get Recommendations</button>
     </div>
   </div>
 </div>
@@ -99,6 +121,17 @@
   var carousel = new bootstrap.Carousel(formCarousel)
   var slideIndex = 0
 
+  // fetch movie titles from API at /api/movies/title/ using AJAX GET request
+  var validMovieTitles
+  fetch('/api/movies/title/')
+    .then(response => response.json())
+    .then(data => {
+      validMovieTitles = data
+    })
+
+  // ##############################
+  // # Functions
+  // ##############################
   function slide(id) {
     if (id == 'btnradio1') {
       carousel.to(0)
@@ -106,6 +139,45 @@
     } else {
       carousel.to(1)
       slideIndex = 1
+    }
+  }
+
+  function getSingleRecommendations() {
+    var movieInput = document.querySelector('#movieInput')
+    var selectedMovie = movieInput.value
+
+    if (selectedMovie != '') {
+      if (JSON.stringify(validMovieTitles).includes(selectedMovie)) {
+        movieInput.classList.remove('is-invalid')
+        movieInput.classList.add('is-valid')
+        // TODO: Send request
+      } else {
+        movieInput.classList.add('is-invalid')
+      }
+    } else {
+      movieInput.classList.add('is-invalid')
+    }
+  }
+
+  function getMultipleRecommendations() {
+    var movieInputs = document.querySelectorAll('#multipleMovies .form-control')
+    // save movie titles in array
+    var selectedMovies = []
+    movieInputs.forEach(movieInput => {
+      if (movieInput.value != '') {
+        if (JSON.stringify(validMovieTitles).includes(movieInput.value)) {
+          selectedMovies.push(movieInput.value)
+          movieInput.classList.remove('is-invalid')
+          movieInput.classList.add('is-valid')
+        } else {
+          movieInput.classList.add('is-invalid')
+        }
+      } else {
+        movieInput.classList.add('is-invalid')
+      }
+    })
+    if (selectedMovies.length == 5) {
+      // TODO: Send request
     }
   }
 </script>
