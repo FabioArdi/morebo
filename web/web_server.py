@@ -28,12 +28,14 @@ def about():
 @app.route("/api/movies/")
 def get_movies():
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movies = movies.fillna('')  # replace NaN values with empty string
     movies = movies.sort_values(by=['Title']) # order movies by title
     return movies.to_dict(orient='records')
 
 @app.route("/api/movies/title/")
 def get_movie_titles():
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movies = movies.fillna('')  # replace NaN values with empty string
     movies = movies.sort_values(by=['Title']) # order movies by title
     movies = movies['Title']
     return movies.to_dict()
@@ -42,13 +44,24 @@ def get_movie_titles():
 @app.route("/api/movies/page/<int:page>/<int:page_size>")
 def get_movies_page(page, page_size):
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movies = movies.fillna('')  # replace NaN values with empty string
     movies = movies.sort_values(by=['Title']) # order movies by title
     return movies.iloc[page * page_size:(page+1) * page_size].to_dict(orient='records')
 
 @app.route("/api/movies/<int:movie_id>")
-def get_movie(movie_id):
+def get_movie_by_id(movie_id):
     movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movies = movies.fillna('')  # replace NaN values with empty string
     movie = movies[movies['ml_movieId'] == movie_id]
+    if movie.empty:
+        return jsonify({'error': 'not found'}), 404
+    return movie.to_dict(orient='records')
+
+@app.route("/api/movies/<string:movie_title>")
+def get_movie_by_title(movie_title):
+    movies = pd.read_csv('data/movies_meta_data.csv', sep=';', engine='python')
+    movies = movies.fillna('')  # replace NaN values with empty string
+    movie = movies[movies['Title'] == movie_title]
     if movie.empty:
         return jsonify({'error': 'not found'}), 404
     return movie.to_dict(orient='records')

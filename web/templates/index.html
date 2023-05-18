@@ -2,20 +2,7 @@
 {% set active_page = "index" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<link href="/static/css/autocomplete.css" rel="stylesheet">
-<script type="module">
-  //Source: https://github.com/lekoala/bootstrap5-autocomplete
-  import Autocomplete from "https://cdn.jsdelivr.net/gh/lekoala/bootstrap5-autocomplete@master/autocomplete.js";
-  Autocomplete.init("input.autocomplete", {
-    server: "/api/movies/title/",
-    valueField: "id",
-    labelField: "title",
-    highlightTyped: true,
-    maximumItems: 4,
-    fixed: true, // fix overflow issues
-    notFoundMessage: "Movie not found",
-  });
-</script>
+{% include 'helpers/movie_autocomplete.html' %}
 <style>
   .carousel-item {
     transition: transform .5s ease-in-out;

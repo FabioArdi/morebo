@@ -2,3 +2,4 @@ merged.csv
 .venv
 venv/
 nan_rows.csv
+.vscode/
