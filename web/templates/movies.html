@@ -207,6 +207,10 @@
     modal.find(".modal-body p:eq(2)").html("<strong>Director: </strong>" + movie.Director);
     modal.find(".modal-body p:eq(3)").html("<strong>Writer: </strong>" + movie.Writer);
     modal.find(".modal-body p:eq(4)").html("<strong>Actors: </strong>" + movie.Actors);
+    var genrePills = movie.Genre.split(',').map(function (genre) {
+      return "<span class='badge rounded-pill text-bg-secondary me-1'>" + genre + "</span>";
+    });
+    modal.find(".modal-title").after(genrePills.join(''));
     modal.modal("show");
   }
 
