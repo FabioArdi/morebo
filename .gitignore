@@ -2,6 +2,7 @@ merged.csv
 .venv
 venv/
 nan_rows.csv
+.vscode/
 movies_cleaned.csv
 users_cleaned.csv
 ratings_cleaned.csv

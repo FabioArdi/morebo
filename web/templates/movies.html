@@ -5,12 +5,61 @@
 <h1 class="text-center mb-5">Movies</h1>
 <p class="lead text-center mb-5">Below you can find a list of all currently available movies.</p>
 
+{% include 'helpers/movie_autocomplete.html' %}
+<!-- Search bar -->
+<div class="input-group mb-3">
+  <input type="text" class="form-control autocomplete" placeholder="Search" id="searchBar">
+  <button class="btn btn-outline-secondary" onclick="searchMovie()"><i class="bi bi-search"></i></button>
+</div>
+<!-- Modal for searched movie -->
+<div class="modal fade text-start" id="searchedMovie" tabindex="-1" aria-labelledby="searchedMovie" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5 pe-2"></h5>
+        <span class="badge rounded-pill text-bg-secondary me-1"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row mb-5">
+            <div class="col-md-8">
+              <p class="lead"></p>
+            </div>
+            <div class="col-md-4">
+              <img src="#" class="img-fluid rounded" alt="No image available">
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p><strong>Release date: </strong></p>
+            </li>
+            <li class="list-group-item">
+              <p><strong>Director: </strong></p>
+            </li>
+            <li class="list-group-item">
+              <p><strong>Writer: </strong></p>
+            </li>
+            <li class="list-group-item">
+              <p><strong>Actors: </strong></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Movie list -->
 <div class="row row-cols-3 g-3 text-start">
   {% for movie in movies %}
   <div class="col">
     <div class="card h-100">
-      <img src="{{ movie.Poster }}" class="card-img-top" alt="No image available" onerror="this.onerror=null; this.src='/static/no-image.png'">
+      <img src="{{ movie.Poster }}" class="card-img-top" alt="No image available"
+        onerror="this.onerror=null; this.src='/static/no-image.png'">
       <div class="card-body">
         <h5 class="card-title" style="font-size: medium;">{{ movie.Title }}</h5>
         <h6 class="card-subtitle mb-2 text-body-secondary">{{ movie.Year }}</h6>
@@ -131,5 +180,39 @@
   function change_page(page) {
     document.location.href = "{{ url_for('movies') }}" + page + '/' + moviesPerPage;
   }
+
+  function searchMovie() {
+    movieTitle = document.getElementById("searchBar").value
+
+    // AJAX get request 
+    $.ajax({
+      url: "/api/movies/" + movieTitle,
+      type: "GET",
+      success: function (response) {
+        response = response[0]
+        fillModal(response)
+      },
+      error: function (error) {
+        console.log(error)
+      }
+    });
+  }
+
+  function fillModal(movie) {
+    var modal = $("#searchedMovie");
+    modal.find(".modal-title").text(movie.Title);
+    modal.find(".modal-body .lead").text(movie.Plot);
+    modal.find(".modal-body img").attr("src", movie.Poster);
+    modal.find(".modal-body p:eq(1)").html("<strong>Release date: </strong>" + movie.Released);
+    modal.find(".modal-body p:eq(2)").html("<strong>Director: </strong>" + movie.Director);
+    modal.find(".modal-body p:eq(3)").html("<strong>Writer: </strong>" + movie.Writer);
+    modal.find(".modal-body p:eq(4)").html("<strong>Actors: </strong>" + movie.Actors);
+    var genrePills = movie.Genre.split(',').map(function (genre) {
+      return "<span class='badge rounded-pill text-bg-secondary me-1'>" + genre + "</span>";
+    });
+    modal.find(".modal-title").after(genrePills.join(''));
+    modal.modal("show");
+  }
+
 </script>
 {% endblock %}
