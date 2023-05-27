@@ -7,3 +7,7 @@ movies_cleaned.csv
 users_cleaned.csv
 ratings_cleaned.csv
 .index
+data/movies.csv
+data/users.csv
+data/ratings.csv
+model2_new.ipynb
