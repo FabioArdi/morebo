@@ -109,6 +109,6 @@ tzdata==2023.3
 urllib3==1.26.16
 waitress==2.1.2
 wcwidth==0.2.6
-Werkzeug==2.2.3
+Werkzeug==2.3.3
 wrapt==1.14.1
 WTForms==3.0.1
