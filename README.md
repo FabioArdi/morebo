@@ -7,3 +7,5 @@
 - Install all required packages with `pip install -r requirements.txt`
 - Run all cells in the notebook *final.ipynb*.
 - Once all cells have been executed you can start the Flask webserver in the *web* folder.
+
+Notebook was developed using Python 3.11.1.
