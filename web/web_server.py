@@ -14,7 +14,6 @@ def index():
 @app.route("/movies/<int:page>", defaults={'page_size': 10})
 @app.route("/movies/<int:page>/<int:page_size>")
 def movies(page, page_size):
-    print(page_size)
     return render_template("movies.html", page=page, page_size=page_size, movies=get_movies_page(page, page_size))
 
 @app.route("/about")
@@ -84,14 +83,13 @@ def get_pearson_predictions():
         similar_movies = similar_movies.append(similar_score, ignore_index=True)
 
     # order movies by score
-    sorted_movies = similar_movies.sum().sort_values(ascending=False).head(20)
+    sorted_movies = similar_movies.sum().sort_values(ascending=False).head(15)
     sorted_movies_list = sorted_movies.reset_index().rename(columns={'index': 'movieTitle', 0: 'rating'}).to_dict(orient='records')
 
     # Exclude movies that user has already rated
     movie_titles = [movie['movieTitle'] for movie in movie_ratings]
     sorted_movies_list = [movie for movie in sorted_movies_list if movie['Title'] not in movie_titles]
-
-    return sorted_movies_list   
+    return sorted_movies_list 
 
 
 # ###############################

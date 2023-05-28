@@ -79,15 +79,15 @@
         <div class="input-group mb-3 has-validation">
           <input type="text" class="form-control autocomplete" placeholder="{{movie_names[i]}}">
           <form>
-            <input class="star star-5" id="star-{{i}}-5" type="radio" name="star" value="5"/>
+            <input class="star star-5" id="star-{{i}}-5" type="radio" name="star" value="5" />
             <label class="star star-5" for="star-{{i}}-5"></label>
-            <input class="star star-4" id="star-{{i}}-4" type="radio" name="star" value="4"/>
+            <input class="star star-4" id="star-{{i}}-4" type="radio" name="star" value="4" />
             <label class="star star-4" for="star-{{i}}-4"></label>
-            <input class="star star-3" id="star-{{i}}-3" type="radio" name="star" value="3"/>
+            <input class="star star-3" id="star-{{i}}-3" type="radio" name="star" value="3" />
             <label class="star star-3" for="star-{{i}}-3"></label>
-            <input class="star star-2" id="star-{{i}}-2" type="radio" name="star" value="2"/>
+            <input class="star star-2" id="star-{{i}}-2" type="radio" name="star" value="2" />
             <label class="star star-2" for="star-{{i}}-2"></label>
-            <input class="star star-1" id="star-{{i}}-1" type="radio" name="star" value="1"/>
+            <input class="star star-1" id="star-{{i}}-1" type="radio" name="star" value="1" />
             <label class="star star-1" for="star-{{i}}-1"></label>
           </form>
           <div class="invalid-feedback">
@@ -96,8 +96,14 @@
         </div>
         {% endfor %}
       </div>
-      <button class="btn btn-primary mt-3" id="submitMultipleBtn" onclick="getMultipleRecommendations()">Get Recommendations</button>
+      <button class="btn btn-primary mt-3" id="submitMultipleBtn" onclick="getMultipleRecommendations()">Get
+        Recommendations</button>
     </div>
+  </div>
+</div>
+<div id="movieRecommendations" class="mt-5 mb-3 d-none" id="movieRecommendationsResult">
+  <h2 class="text-center mb-5">Your recommendations</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4" id="movieRecommendationsRow">
   </div>
 </div>
 
@@ -170,41 +176,41 @@
 
   function get_movies(type) {
     var btn
-    if (type == 'single') {
-      btn = document.querySelector('#submitSingleBtn')
-      var movieInput = document.querySelector('#movieInput').value
+    if (type == "single") {
+      btn = document.querySelector("#submitSingleBtn")
+      var movieInput = document.querySelector("#movieInput").value
       // make json object
       var selectedMovies = {
-        "userId": 0,
-        "ratings": [
-        {"movieTitle": movieInput, "rating": 5, "movieId":0}
+        userId: 0,
+        ratings: [
+          { movieTitle: movieInput, rating: 5, movieId: 0 }
         ]
       }
-    } else if (type == 'multiple') {
-      btn = document.querySelector('#submitMultipleBtn')
-      var movieInputs = document.querySelectorAll('#multipleMovies .form-control')
-      var ratings = document.querySelectorAll('#multipleMovies .star:checked')
+    } else if (type == "multiple") {
+      btn = document.querySelector("#submitMultipleBtn")
+      var movieInputs = document.querySelectorAll("#multipleMovies .form-control")
+      var ratings = document.querySelectorAll("#multipleMovies .star:checked")
 
       // save movie titles in array
       var selectedMovies = {
-        "userId": 0,
-        "ratings": []
+        userId: 0,
+        ratings: []
       }
-      movieInputs.forEach((movieInput, index) => {
+      movieInputs.forEach(function (movieInput, index) {
         selectedMovies.ratings.push({
-          "movieTitle": movieInput.value,
-          "rating": Number(ratings[index].value),
-          "movieId": 0
+          movieTitle: movieInput.value,
+          rating: Number(ratings[index].value),
+          movieId: 0
         })
       })
     } else {
-      console.log('Error: Invalid type')
+      console.log("Error: Invalid type")
     }
 
     selectedMovies = JSON.stringify(selectedMovies) // convert to JSON string
 
     // Hide button text and show spinner
-    btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span>';
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span>'
 
     $.ajax({
       url: "api/model/pearson/",
@@ -214,17 +220,62 @@
       processData: false,
       data: selectedMovies,
       type: "POST",
-      success: function (response) { //Set the corresponding age group as active
-        console.log(response)
+      success: function (response) {
+        var movieRecommendationsRow = document.querySelector("#movieRecommendationsRow")
+        movieRecommendationsRow.innerHTML = ""
+        // Array to store all the promises
+        var movieMetaData = []
+
+        response.forEach(function (movie) {
+          // Fetch movie meta data and store the promise
+          var moviePromise = get_movie_meta_data(movie.Title)
+          movieMetaData.push(moviePromise)
+
+          moviePromise.then(function (movie_data) {
+            movieRecommendationsRow.innerHTML += `
+            <div class="col">
+              <div class="card h-100">
+                <img src="${movie_data.Poster}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">${movie_data.Title}</h5>
+                  <p class="card-text">${movie_data.Genre}</p>
+                </div>
+              </div>
+            </div>
+            `
+          })
+            .catch(function (error) {
+              console.log("Error retrieving movie data:", error)
+            })
+        })
       },
       error: function (response) {
         console.log(response)
       },
       complete: function (response) {
+        $("#movieRecommendations").removeClass("d-none")
         // Show button text and hide spinner
-        btn.innerHTML = "Get Recommendations";
+        btn.innerHTML = "Get Recommendations"
+
       }
-    });
+    })
   }
+
+  function get_movie_meta_data(movieTitle) {
+    return fetch("api/movies/" + movieTitle)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Request failed with status: " + response.status)
+        }
+        return response.json()
+      })
+      .then(function (data) {
+        return data[0]
+      })
+      .catch(function (error) {
+        console.log("Error: " + error)
+      })
+  }
+
 </script>
 {% endblock %}
