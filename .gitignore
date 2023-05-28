@@ -10,4 +10,5 @@ ratings_cleaned.csv
 data/movies.csv
 data/users.csv
 data/ratings.csv
+data/similarity.csv
 model2_new.ipynb

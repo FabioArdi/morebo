@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 import pandas as pd
 
 app = Flask(__name__)
@@ -65,6 +65,33 @@ def get_movie_by_title(movie_title):
     if movie.empty:
         return jsonify({'error': 'not found'}), 404
     return movie.to_dict(orient='records')
+
+@app.route("/api/model/pearson/", methods=['POST'])
+def get_pearson_predictions():
+    # get payload from request
+    payload = request.get_json(force=True)
+    user_id = payload['userId']
+    movie_ratings = payload['ratings']
+
+    # load similarity matrix
+    similary_matrix = pd.read_csv('data/similarity.csv', sep=',', engine='python', index_col=0)
+
+    # get predictions
+    similar_movies = pd.DataFrame()
+    for movie in movie_ratings:
+        similar_score = similary_matrix[movie['movieTitle']]*(movie['rating']-2.5)
+        similar_score = similar_score.sort_values(ascending=False)
+        similar_movies = similar_movies.append(similar_score, ignore_index=True)
+
+    # order movies by score
+    sorted_movies = similar_movies.sum().sort_values(ascending=False).head(20)
+    sorted_movies_list = sorted_movies.reset_index().rename(columns={'index': 'movieTitle', 0: 'rating'}).to_dict(orient='records')
+
+    # Exclude movies that user has already rated
+    movie_titles = [movie['movieTitle'] for movie in movie_ratings]
+    sorted_movies_list = [movie for movie in sorted_movies_list if movie['Title'] not in movie_titles]
+
+    return sorted_movies_list   
 
 
 # ###############################
