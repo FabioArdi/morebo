@@ -221,7 +221,6 @@
       data: selectedMovies,
       type: "POST",
       success: function (response) {
-        console.log(response)
         var movieRecommendationsRow = document.querySelector("#movieRecommendationsRow")
         movieRecommendationsRow.innerHTML = ""
         // Array to store all the promises

@@ -14,7 +14,6 @@ def index():
 @app.route("/movies/<int:page>", defaults={'page_size': 10})
 @app.route("/movies/<int:page>/<int:page_size>")
 def movies(page, page_size):
-    print(page_size)
     return render_template("movies.html", page=page, page_size=page_size, movies=get_movies_page(page, page_size))
 
 @app.route("/about")
@@ -90,8 +89,7 @@ def get_pearson_predictions():
     # Exclude movies that user has already rated
     movie_titles = [movie['movieTitle'] for movie in movie_ratings]
     sorted_movies_list = [movie for movie in sorted_movies_list if movie['Title'] not in movie_titles]
-    print(sorted_movies_list)
-    return sorted_movies_list   
+    return sorted_movies_list 
 
 
 # ###############################
